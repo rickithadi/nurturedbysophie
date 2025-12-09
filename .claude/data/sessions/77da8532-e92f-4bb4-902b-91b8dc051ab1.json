@@ -1,0 +1,6 @@
+{
+  "session_id": "77da8532-e92f-4bb4-902b-91b8dc051ab1",
+  "prompts": [
+    "\nInitialize a simple Vite React TypeScript application. It should be performant and fast. Also initialize a git repository. "
+  ]
+}
