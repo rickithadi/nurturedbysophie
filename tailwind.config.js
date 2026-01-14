@@ -14,6 +14,11 @@ module.exports = {
         cream: '#fffdf7',
         sage: '#717e5c',
         forest: '#45572d',
+        accent: '#a2aa92',
+        teal: '#304254',
+      },
+      borderRadius: {
+        'arch': '100px 100px 30px 30px',
       },
     },
   },

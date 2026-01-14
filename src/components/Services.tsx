@@ -14,60 +14,69 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Service 1: COCE */}
+          {/* Service 1: Midwifery Care */}
           <div className="group p-8 md:p-10 rounded-2xl bg-cream border border-forest/10 hover:border-forest/40 transition-all duration-300 hover:shadow-xl hover:shadow-forest/5">
             <div className="w-12 h-12 bg-forest/10 rounded-full flex items-center justify-center mb-8 text-forest">
               <Baby className="w-6 h-6 stroke-[1.5]" />
             </div>
             <h3 className="font-playfair text-forest text-2xl md:text-3xl tracking-tight mb-4">
-              COCE Midwifery
+              Midwifery Care
             </h3>
             <p className="text-lg leading-relaxed mb-8 font-light text-sage">
-              Continuity of Care Experience. Providing dedicated support throughout your pregnancy journey, ensuring a familiar face and consistent guidance from conception to postpartum.
+              Comprehensive support through antenatal care, labour and birth assistance, and postnatal guidance. Continuity of care ensures you have a trusted midwife by your side throughout your journey.
             </p>
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="inline-flex items-center text-forest font-bodoni border-b border-forest/30 pb-1 hover:border-forest transition-colors"
             >
               Learn more <ArrowRight className="w-4 h-4 ml-2" />
             </a>
           </div>
 
-          {/* Service 2: Pilates */}
-          <div className="group p-8 md:p-10 rounded-2xl bg-cream border border-forest/10 hover:border-forest/40 transition-all duration-300 hover:shadow-xl hover:shadow-forest/5">
-            <div className="w-12 h-12 bg-forest/10 rounded-full flex items-center justify-center mb-8 text-forest">
-              <Activity className="w-6 h-6 stroke-[1.5]" />
-            </div>
-            <h3 className="font-playfair text-forest text-2xl md:text-3xl tracking-tight mb-4">
-              Mat Pilates
-            </h3>
-            <p className="text-lg leading-relaxed mb-8 font-light text-sage">
-              Gentle, strength-building movement designed specifically for the maternal body. Focus on pelvic floor health, core stability, and mindful breathing techniques.
-            </p>
-            <a 
-              href="#" 
-              className="inline-flex items-center text-forest font-bodoni border-b border-forest/30 pb-1 hover:border-forest transition-colors"
-            >
-              View schedule <ArrowRight className="w-4 h-4 ml-2" />
-            </a>
-          </div>
-
-          {/* Service 3: Breastfeeding */}
-          <div className="group p-8 md:p-10 rounded-2xl bg-cream border border-dashed border-forest/20 relative overflow-hidden">
+          {/* Service 2: Reformer Pilates */}
+          <div className="group p-8 md:p-10 rounded-2xl bg-cream border border-forest/10 transition-all duration-300 relative opacity-60 cursor-not-allowed">
+            {/* Coming Soon Badge */}
             <div className="absolute top-4 right-4 bg-sage/10 px-3 py-1 rounded-full">
               <span className="text-xs uppercase font-bodoni tracking-widest text-forest">
                 Coming Soon
               </span>
             </div>
-            <div className="w-12 h-12 bg-forest/5 rounded-full flex items-center justify-center mb-8 text-forest/60">
+
+            <div className="w-12 h-12 bg-forest/10 rounded-full flex items-center justify-center mb-8 text-forest">
+              <Activity className="w-6 h-6 stroke-[1.5]" />
+            </div>
+            <h3 className="font-playfair text-forest text-2xl md:text-3xl tracking-tight mb-4">
+              Reformer Pilates
+            </h3>
+            <p className="text-lg leading-relaxed mb-8 font-light text-sage">
+              Pre and postnatal reformer Pilates sessions designed to strengthen your body, connect with breathwork, and support pelvic floor health throughout pregnancy and postpartum recovery.
+            </p>
+            <span className="inline-flex items-center text-forest font-bodoni border-b border-forest/30 pb-1">
+              View schedule <ArrowRight className="w-4 h-4 ml-2" />
+            </span>
+          </div>
+
+          {/* Service 3: Breastfeeding */}
+          <div className="group p-8 md:p-10 rounded-2xl bg-cream border border-forest/10 transition-all duration-300 relative opacity-60 cursor-not-allowed">
+            {/* Coming Soon Badge */}
+            <div className="absolute top-4 right-4 bg-sage/10 px-3 py-1 rounded-full">
+              <span className="text-xs uppercase font-bodoni tracking-widest text-forest">
+                Coming Soon
+              </span>
+            </div>
+
+            <div className="w-12 h-12 bg-forest/10 rounded-full flex items-center justify-center mb-8 text-forest">
               <HeartHandshake className="w-6 h-6 stroke-[1.5]" />
             </div>
-            <h3 className="font-playfair text-forest/70 text-2xl md:text-3xl tracking-tight mb-4">
-              Breastfeeding Support
+            <h3 className="font-playfair text-forest text-2xl md:text-3xl tracking-tight mb-4">
+              Breastfeeding
             </h3>
-            <p className="text-lg leading-relaxed mb-8 font-light text-sage/80">
-              Specialized lactation consulting to support you and your baby in establishing a comfortable and successful breastfeeding relationship.
+            <p className="text-lg leading-relaxed mb-8 font-light text-sage">
+              Expert lactation support to help establish and maintain a successful breastfeeding relationship with your baby. Personalized guidance for your unique journey.
             </p>
+            <span className="inline-flex items-center text-forest font-bodoni border-b border-forest/30 pb-1">
+              Learn More! <ArrowRight className="w-4 h-4 ml-2" />
+            </span>
           </div>
         </div>
       </div>

@@ -6,11 +6,8 @@ const Journal = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div>
-            <span className="font-bodoni text-cream/60 uppercase tracking-widest text-sm mb-4 block">
-              Education
-            </span>
             <h2 className="font-playfair text-cream text-4xl md:text-5xl tracking-tight font-medium">
-              Research & Resources
+              Our Blog
             </h2>
           </div>
           
@@ -19,7 +16,7 @@ const Journal = () => {
             className="group flex items-center gap-3 bg-cream text-forest px-6 py-3 rounded-full font-bodoni text-sm hover:bg-sage hover:text-cream transition-all duration-300"
           >
             <Mail className="w-4 h-4" />
-            Subscribe on Substack
+            Substack
           </a>
         </div>
 
