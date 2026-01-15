@@ -26,7 +26,7 @@ const Services = () => {
               Comprehensive support through antenatal care, labour and birth assistance, and postnatal guidance. Continuity of care ensures you have a trusted midwife by your side throughout your journey.
             </p>
             <a
-              href="#"
+              href="#celebrating-motherhood"
               className="inline-flex items-center text-forest font-bodoni border-b border-forest/30 pb-1 hover:border-forest transition-colors"
             >
               Learn more <ArrowRight className="w-4 h-4 ml-2" />

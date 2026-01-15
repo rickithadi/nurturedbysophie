@@ -9,7 +9,7 @@ const Hero = () => {
       </div>
 
       {/* Wordmark - Canva Style */}
-      <h1 className="font-playfair text-forest text-6xl md:text-8xl lg:text-9xl tracking-tight leading-tight font-medium mb-8">
+      <h1 className="font-playfair text-forest text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight leading-tight font-medium mb-8">
         NurturedbySophie
       </h1>
 
