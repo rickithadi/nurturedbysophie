@@ -10,7 +10,7 @@ const Navigation = () => {
 
   return (
     <nav className="fixed w-full z-50 top-0 left-0 bg-cream/80 backdrop-blur-md border-b border-forest/10">
-      <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
         <a
           href="#"
           className="flex items-center hover:opacity-80 transition-opacity"
@@ -18,7 +18,7 @@ const Navigation = () => {
           <img
             src="/logo.png"
             alt="NurturedbySophie"
-            className="h-24 w-24 md:h-32 md:w-32"
+            className="h-14 w-14 md:h-32 md:w-32"
           />
         </a>
         
