@@ -5,10 +5,10 @@ const About = () => {
         {/* Header */}
         <div className="mb-16 md:mb-24">
           <span className="font-bodoni text-forest uppercase tracking-widest text-sm mb-4 block">
-            Sophie's Philosophy
+           Philosophy
           </span>
           <h2 className="font-playfair text-forest text-4xl md:text-5xl tracking-tight font-medium">
-            About Sophie
+            About 
           </h2>
         </div>
 
