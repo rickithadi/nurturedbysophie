@@ -49,7 +49,7 @@ const Services = () => {
               Reformer Pilates
             </h3>
             <p className="text-lg leading-relaxed mb-8 font-light text-sage">
-              Pre and postnatal reformer Pilates sessions designed to strengthen your body, connect with breathwork, and support pelvic floor health throughout pregnancy and postpartum recovery.
+              Pre-and-postnatal reformer Pilates sessions (one-on-one or in an intimate group setting), designed to strengthen your body, connect with breathwork, and support pelvic floor health throughout pregnancy and postpartum recovery.
             </p>
             <span className="inline-flex items-center text-forest font-bodoni border-b border-forest/30 pb-1">
               View schedule <ArrowRight className="w-4 h-4 ml-2" />
@@ -69,10 +69,10 @@ const Services = () => {
               <HeartHandshake className="w-6 h-6 stroke-[1.5]" />
             </div>
             <h3 className="font-playfair text-forest text-2xl md:text-3xl tracking-tight mb-4">
-              Breastfeeding
+              Lactation Consultant
             </h3>
             <p className="text-lg leading-relaxed mb-8 font-light text-sage">
-              Expert lactation support to help establish and maintain a successful breastfeeding relationship with your baby. Personalized guidance for your unique journey.
+              Breastfeeding education and support to help establish and maintain a successful relationship and routine between your body and your baby. This will be personalised guidance as it is a unique journey.
             </p>
             <span className="inline-flex items-center text-forest font-bodoni border-b border-forest/30 pb-1">
               Learn More! <ArrowRight className="w-4 h-4 ml-2" />

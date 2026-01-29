@@ -7,12 +7,12 @@ const Journal = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div>
             <h2 className="font-playfair text-cream text-4xl md:text-5xl tracking-tight font-medium">
-              Our Blog
+              Blog Posts
             </h2>
           </div>
           
           <a 
-            href="#" 
+            href="https://substack.com/@nurturedbysophie"
             className="group flex items-center gap-3 bg-cream text-forest px-6 py-3 rounded-full font-bodoni text-sm hover:bg-sage hover:text-cream transition-all duration-300"
           >
             <Mail className="w-4 h-4" />
