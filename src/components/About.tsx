@@ -64,13 +64,13 @@ const About = () => {
           </h2>
           <div className="space-y-6 text-lg font-light leading-relaxed text-sage">
             <p>
-              Sophie is a student Midwife at ACU, graduating in 2027. She is deeply committed to women-centred care and aims to one day be a private midwife, advocating and specialising in physiological births, specifically home births.
+              Sophie is a student Midwife at ACU, graduating in 2027. She is deeply committed to women-centred care and aims to one day be a private midwife, advocating for physiological births, specifically specialising in home births.
             </p>
             <p>
-              Currently, Sophie can offer her services as a student and be a supportive presence alongside your pregnancy journey, providing continuity of care. The benefits of this experience are that she will be committed and be a part of every step of your pregnancy, learning from each other.
+              Currently, Sophie can offer her services as a student and be a supportive presence alongside your pregnancy journey, providing continuity of care. The benefits of this experience are that she will be committed and be a part of every step of your pregnancy journey, learning from each other.
             </p>
             <p>
-              Sophie is also training in Reformer Pilates as of 2026, in hopes to specialise in pre- and postnatal Reformer Pilates. This endeavour is fuelled by the desire to expand her knowledge and expertise when it comes to supporting pregnant women, which reflects her holistic approach within her services.
+              Sophie is also currently training in Reformer Pilates as of 2026, in hopes to specialise in pre- and postnatal Reformer Pilates. This endeavour is fuelled by the desire to expand her knowledge and expertise when it comes to supporting pregnant women, which reflects her holistic approach within her services.
             </p>
             <p>
               If you're interested in Sophie's services, please don't hesitate to reach out!

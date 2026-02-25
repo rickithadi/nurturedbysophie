@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,8 +12,8 @@ const Navigation = () => {
   return (
     <nav className="fixed w-full z-50 top-0 left-0 bg-cream/80 backdrop-blur-md border-b border-forest/10">
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-        <a
-          href="#"
+        <Link
+          to="/"
           className="flex items-center hover:opacity-80 transition-opacity"
         >
           <img
@@ -20,11 +21,11 @@ const Navigation = () => {
             alt="NurturedbySophie"
             className="h-14 w-14 md:h-32 md:w-32"
           />
-        </a>
-        
+        </Link>
+
         <div className="hidden md:flex space-x-8 items-center">
-          <a 
-            href="#services" 
+          <a
+            href="#services"
             className="text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
           >
             Services
@@ -50,7 +51,7 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden text-forest"
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
@@ -63,8 +64,8 @@ const Navigation = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-cream border-b border-forest/10">
           <div className="px-6 py-4 space-y-4">
-            <a 
-              href="#services" 
+            <a
+              href="#services"
               className="block text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >

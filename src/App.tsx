@@ -1,21 +1,32 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
 import Journal from './components/Journal';
 import Contact from './components/Contact';
+import BlogPost from './pages/BlogPost';
+
+const MainSite = () => (
+  <div className="bg-cream text-sage antialiased selection:bg-forest selection:text-cream">
+    <Navigation />
+    <Hero />
+    <Services />
+    <About />
+    <Journal />
+    <Contact />
+  </div>
+);
 
 function App() {
   return (
-    <div className="bg-cream text-sage antialiased selection:bg-forest selection:text-cream">
-      <Navigation />
-      <Hero />
-      <Services />
-      <About />
-      <Journal />
-      <Contact />
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainSite />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
