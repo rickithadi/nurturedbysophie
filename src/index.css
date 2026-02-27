@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Helvetica World', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 /* Custom animations */
 @keyframes fade-in {
   from {

@@ -58,6 +58,8 @@ const BlogPost = () => {
           <span className="uppercase tracking-widest">{post.category}</span>
           <span className="w-1 h-1 bg-forest/30 rounded-full"></span>
           <span>{post.date}</span>
+          <span className="w-1 h-1 bg-forest/30 rounded-full"></span>
+          <span>Written by {post.author}</span>
         </div>
         <h1 className="font-playfair text-3xl md:text-5xl text-forest leading-tight tracking-tight font-medium">
           {post.title}
@@ -75,24 +77,44 @@ const BlogPost = () => {
                 </h2>
               )}
               {section.body && (
-                <p className="font-bodoni text-forest/80 text-lg leading-relaxed">
+                <p className="font-helvetica text-forest/80 text-lg leading-relaxed">
                   {section.body}
                 </p>
               )}
               {section.list && (
-                <ul className="mt-3 space-y-2">
-                  {section.list.map((item, j) => (
-                    <li key={j} className="flex gap-3 font-bodoni text-forest/80 text-lg leading-relaxed">
-                      <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-sage flex-shrink-0"></span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                section.ordered ? (
+                  <ol start={section.listStart ?? 1} className="mt-3 space-y-2 list-none">
+                    {section.list.map((item, j) => (
+                      <li key={j} className="flex gap-3 font-helvetica text-forest/80 text-lg leading-relaxed">
+                        <span className="flex-shrink-0 font-helvetica text-sage">
+                          {(section.listStart ?? 1) + j}.
+                        </span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ol>
+                ) : (
+                  <ul className="mt-3 space-y-2">
+                    {section.list.map((item, j) => (
+                      <li key={j} className="flex gap-3 font-helvetica text-forest/80 text-lg leading-relaxed">
+                        <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-sage flex-shrink-0"></span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )
               )}
               {section.footnote && (
-                <p className="mt-3 font-bodoni text-forest/50 text-sm leading-relaxed italic">
+                <p className="mt-3 font-helvetica text-forest/50 text-sm leading-relaxed italic">
                   {section.footnote}
                 </p>
+              )}
+              {section.image && (
+                <img
+                  src={section.image}
+                  alt={section.imageAlt ?? ''}
+                  className="w-full rounded-xl my-4"
+                />
               )}
             </div>
           ))}

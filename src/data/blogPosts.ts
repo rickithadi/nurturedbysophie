@@ -3,6 +3,10 @@ export interface BlogSection {
   body?: string;
   list?: string[];
   footnote?: string;
+  image?: string;
+  imageAlt?: string;
+  ordered?: boolean;
+  listStart?: number;
 }
 
 export interface BlogPost {
@@ -10,6 +14,8 @@ export interface BlogPost {
   title: string;
   category: string;
   date: string;
+  author: string;
+  tag: 'Postnatal' | 'Prenatal';
   image: string;
   imageAlt: string;
   summary: string;
@@ -22,8 +28,10 @@ export const blogPosts: BlogPost[] = [
     title: 'The Golden Hour: Understanding the Physiology',
     category: 'Research',
     date: 'Feb 2026',
-    image: 'https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c543a9e1-f226-4ced-80b0-feb8445a75b9_1600w.jpg',
-    imageAlt: 'Books and tea',
+    author: 'Sophie Akther',
+    tag: 'Postnatal',
+    image: '/golden-hour-hero.jpg',
+    imageAlt: 'Newborn baby held after birth',
     summary: 'The first 60 minutes after birth are a powerful physiological window — for bonding, hormonal regulation, and a foundation of lifelong wellbeing.',
     sections: [
       {
@@ -54,8 +62,10 @@ export const blogPosts: BlogPost[] = [
     title: 'Colostrum: When should I express it?',
     category: 'Education',
     date: 'Feb 2026',
-    image: 'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=2070&auto=format&fit=crop',
-    imageAlt: 'Mother and newborn baby',
+    author: 'Sophie Akther',
+    tag: 'Prenatal',
+    image: '/colostrum-hero.jpg',
+    imageAlt: 'Mother breastfeeding newborn baby',
     summary: 'Colostrum — often called "liquid gold" — is your baby\'s first nutrition. Learn what antenatal expressing is, who it\'s recommended for, and how to get started.',
     sections: [
       {
@@ -94,6 +104,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'Things to know before you start',
+        ordered: true,
         list: [
           'Start no earlier than 36 weeks, unless advised otherwise.',
           'Colostrum is thick and produced in small amounts – drops are normal.',
@@ -105,10 +116,21 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'How to Hand Express',
+        ordered: true,
         list: [
           'Wash your hands thoroughly.',
           'You may find it easier after a warm shower or gentle breast massage.',
-          'You may prefer to ask your midwife or follow the instructions below.',
+          'You may prefer to ask your midwife or follow the instructions and image below:',
+        ],
+      },
+      {
+        image: '/boobBlog.png',
+        imageAlt: 'Hand expressing technique diagram',
+      },
+      {
+        ordered: true,
+        listStart: 4,
+        list: [
           'Place the pads of your thumb and forefinger opposite each other at the outer edge of your areola.',
           'Gently press back into your breast tissue (toward your chest wall) and compress your fingers together rhythmically.',
           'Rotate finger positions around the areola if needed.',

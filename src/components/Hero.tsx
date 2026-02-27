@@ -14,7 +14,7 @@ const Hero = () => {
       </h1>
 
       {/* Tagline */}
-      <p className="font-bodoni text-forest text-2xl md:text-3xl italic font-light tracking-wide mb-12 max-w-2xl">
+      <p className="font-helvetica text-forest text-2xl md:text-3xl italic font-light tracking-wide mb-12 max-w-2xl">
         Guiding you from bump to baby, and beyond!
       </p>
 

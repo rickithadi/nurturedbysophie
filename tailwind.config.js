@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
         'bodoni': ['Bodoni Moda', 'serif'],
+        'helvetica': ['Helvetica World', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
         cream: '#fffdf7',

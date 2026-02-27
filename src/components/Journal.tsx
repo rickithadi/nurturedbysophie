@@ -1,5 +1,6 @@
 import { Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { blogPosts } from '../data/blogPosts';
 
 const Journal = () => {
   return (
@@ -26,16 +27,19 @@ const Journal = () => {
           <Link to="/blog/golden-hour" className="group cursor-pointer">
             <div className="aspect-[16/9] bg-cream/5 rounded-xl mb-6 overflow-hidden border border-cream/10">
               <img
-                src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c543a9e1-f226-4ced-80b0-feb8445a75b9_1600w.jpg"
-                alt="Books and tea"
+                src="/golden-hour-hero.jpg"
+                alt="Newborn baby held after birth"
                 className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500"
               />
             </div>
-            <div className="flex items-center gap-4 mb-3 text-cream/60 text-sm font-bodoni">
-              <span>Research</span>
+            <div className="flex items-center gap-3 mb-2 flex-wrap">
+              <span className="font-bodoni text-xs uppercase tracking-widest bg-cream/10 border border-cream/20 text-cream/80 px-2.5 py-0.5 rounded-full">
+                {blogPosts[0].tag}
+              </span>
               <span className="w-1 h-1 bg-cream/40 rounded-full"></span>
-              <span>Feb 2026</span>
+              <span className="font-bodoni text-sm text-cream/60">{blogPosts[0].date}</span>
             </div>
+            <p className="font-bodoni text-xs text-cream/50 mb-3">Written by {blogPosts[0].author}</p>
             <h3 className="font-playfair text-2xl md:text-3xl mb-3 group-hover:underline decoration-cream/30 underline-offset-4">
               The Golden Hour: Understanding the Physiology
             </h3>
@@ -48,16 +52,19 @@ const Journal = () => {
           <Link to="/blog/colostrum" className="group cursor-pointer">
             <div className="aspect-[16/9] bg-cream/5 rounded-xl mb-6 overflow-hidden border border-cream/10">
               <img
-                src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=2070&auto=format&fit=crop"
-                alt="Mother and newborn baby"
+                src="/colostrum-hero.jpg"
+                alt="Mother breastfeeding newborn baby"
                 className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500"
               />
             </div>
-            <div className="flex items-center gap-4 mb-3 text-cream/60 text-sm font-bodoni">
-              <span>Education</span>
+            <div className="flex items-center gap-3 mb-2 flex-wrap">
+              <span className="font-bodoni text-xs uppercase tracking-widest bg-cream/10 border border-cream/20 text-cream/80 px-2.5 py-0.5 rounded-full">
+                {blogPosts[1].tag}
+              </span>
               <span className="w-1 h-1 bg-cream/40 rounded-full"></span>
-              <span>Feb 2026</span>
+              <span className="font-bodoni text-sm text-cream/60">{blogPosts[1].date}</span>
             </div>
+            <p className="font-bodoni text-xs text-cream/50 mb-3">Written by {blogPosts[1].author}</p>
             <h3 className="font-playfair text-2xl md:text-3xl mb-3 group-hover:underline decoration-cream/30 underline-offset-4">
               Colostrum: When should I express it?
             </h3>
