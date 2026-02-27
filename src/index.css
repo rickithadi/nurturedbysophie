@@ -10,6 +10,16 @@ body {
   font-family: 'Helvetica World', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.blog-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(69, 87, 45, 0.45);
+  transition: text-decoration-color 0.2s;
+}
+.blog-link:hover {
+  text-decoration-color: rgba(69, 87, 45, 0.9);
+}
+
 /* Custom animations */
 @keyframes fade-in {
   from {

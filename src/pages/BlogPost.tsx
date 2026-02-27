@@ -18,10 +18,10 @@ const BlogPost = () => {
         <div className="text-center">
           <p className="font-bodoni text-forest/60 text-lg mb-4">Post not found.</p>
           <button
-            onClick={() => navigate('/#journal')}
+            onClick={() => navigate('/')}
             className="font-bodoni text-sm uppercase tracking-widest text-forest hover:text-sage transition-colors"
           >
-            ← Back to Blog
+            ← Back to Home
           </button>
         </div>
       </div>
@@ -33,11 +33,11 @@ const BlogPost = () => {
       {/* Back nav */}
       <div className="max-w-3xl mx-auto px-6 pt-8 pb-4">
         <button
-          onClick={() => navigate('/#journal')}
+          onClick={() => navigate('/')}
           className="group inline-flex items-center gap-2 font-bodoni text-sm uppercase tracking-widest text-forest/60 hover:text-forest transition-colors"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
-          Back to Blog
+          Back to Home
         </button>
       </div>
 
@@ -72,14 +72,16 @@ const BlogPost = () => {
           {post.sections.map((section, i) => (
             <div key={i}>
               {section.heading && (
-                <h2 className="font-playfair text-xl md:text-2xl text-forest font-semibold mt-10 mb-3">
-                  {section.heading}
-                </h2>
+                <h2
+                  className="font-playfair text-xl md:text-2xl text-forest font-semibold mt-10 mb-3"
+                  dangerouslySetInnerHTML={{ __html: section.heading }}
+                />
               )}
               {section.body && (
-                <p className="font-helvetica text-forest/80 text-lg leading-relaxed">
-                  {section.body}
-                </p>
+                <p
+                  className="font-helvetica text-forest/80 text-lg leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: section.body }}
+                />
               )}
               {section.list && (
                 section.ordered ? (
@@ -89,7 +91,7 @@ const BlogPost = () => {
                         <span className="flex-shrink-0 font-helvetica text-sage">
                           {(section.listStart ?? 1) + j}.
                         </span>
-                        <span>{item}</span>
+                        <span dangerouslySetInnerHTML={{ __html: item }} />
                       </li>
                     ))}
                   </ol>
@@ -98,16 +100,17 @@ const BlogPost = () => {
                     {section.list.map((item, j) => (
                       <li key={j} className="flex gap-3 font-helvetica text-forest/80 text-lg leading-relaxed">
                         <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-sage flex-shrink-0"></span>
-                        <span>{item}</span>
+                        <span dangerouslySetInnerHTML={{ __html: item }} />
                       </li>
                     ))}
                   </ul>
                 )
               )}
               {section.footnote && (
-                <p className="mt-3 font-helvetica text-forest/50 text-sm leading-relaxed italic">
-                  {section.footnote}
-                </p>
+                <p
+                  className="mt-3 font-helvetica text-forest/50 text-base leading-relaxed italic"
+                  dangerouslySetInnerHTML={{ __html: section.footnote }}
+                />
               )}
               {section.image && (
                 <img
