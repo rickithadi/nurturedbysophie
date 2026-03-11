@@ -18,10 +18,10 @@ const BlogPost = () => {
         <div className="text-center">
           <p className="font-bodoni text-forest/60 text-lg mb-4">Post not found.</p>
           <button
-            onClick={() => navigate('/')}
+            onClick={() => { window.location.href = '/#journal'; }}
             className="font-bodoni text-sm uppercase tracking-widest text-forest hover:text-sage transition-colors"
           >
-            ← Back to Home
+            ← Back to Blog
           </button>
         </div>
       </div>
@@ -33,11 +33,11 @@ const BlogPost = () => {
       {/* Back nav */}
       <div className="max-w-3xl mx-auto px-6 pt-8 pb-4">
         <button
-          onClick={() => navigate('/')}
+          onClick={() => { window.location.href = '/#journal'; }}
           className="group inline-flex items-center gap-2 font-bodoni text-sm uppercase tracking-widest text-forest/60 hover:text-forest transition-colors"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
-          Back to Home
+          Back to Blog
         </button>
       </div>
 
@@ -55,8 +55,6 @@ const BlogPost = () => {
       {/* Title block */}
       <div className="max-w-3xl mx-auto px-6 mb-12">
         <div className="flex items-center gap-4 mb-4 text-forest/50 text-sm font-bodoni">
-          <span className="uppercase tracking-widest">{post.category}</span>
-          <span className="w-1 h-1 bg-forest/30 rounded-full"></span>
           <span>{post.date}</span>
           <span className="w-1 h-1 bg-forest/30 rounded-full"></span>
           <span>Written by {post.author}</span>

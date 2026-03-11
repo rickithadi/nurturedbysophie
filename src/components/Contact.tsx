@@ -2,10 +2,10 @@ import { Leaf, Mail, Instagram } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <footer id="contact" className="py-24 px-6 border-t border-forest/10 bg-cream">
+    <footer id="contact" className="h-screen flex flex-col justify-center overflow-hidden px-6 border-t border-forest/10 bg-cream pt-20 md:pt-40">
       <div className="max-w-7xl mx-auto">
         {/* Main Contact Section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <div className="mb-12 flex justify-center text-forest">
             <Leaf className="w-10 h-10 stroke-[1]" />
           </div>
@@ -17,7 +17,7 @@ const Contact = () => {
             Whether you are looking for midwifery care or want to join a Pilates class, I would love to hear from you.
           </p>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-16">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
             <a
               href="mailto:hello@nurturedbysophie.com"
               className="flex items-center gap-3 px-8 py-4 bg-forest text-cream rounded-full text-lg hover:bg-sage transition-colors"

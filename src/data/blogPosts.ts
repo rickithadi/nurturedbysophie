@@ -12,7 +12,6 @@ export interface BlogSection {
 export interface BlogPost {
   slug: string;
   title: string;
-  category: string;
   date: string;
   author: string;
   tag: 'Postnatal' | 'Prenatal';
@@ -26,7 +25,6 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'golden-hour',
     title: 'The Golden Hour: Understanding the Physiology',
-    category: 'Research',
     date: 'Feb 2026',
     author: 'Sophie Akther',
     tag: 'Postnatal',
@@ -38,13 +36,13 @@ export const blogPosts: BlogPost[] = [
         body: 'The minutes and hours directly after a baby is born can be quite overwhelming. Everything seems to happen quickly: health checks, measurements, weigh-ins, and examinations.',
       },
       {
-        body: `These things can often occur during an intense mixture of emotions by the parents, and thus, this period can often feel exceptionally rushed. Hence, the Golden Hour changes that. This concept has been adopted from adult trauma where the initial first hour of trauma management is considered as the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5604187/" target="_blank" rel="noopener noreferrer" class="blog-link">golden hour</a>.`,
+        body: `These things can often occur during an intense mixture of emotions by the parents, and thus, this period can often feel exceptionally rushed. Hence, the Golden Hour changes that. This concept has been adopted from adult trauma where the initial first hour of trauma management is considered as the golden hour.`,
       },
       {
-        body: `The "golden hour" in neonatology is a term used to describe the first 60 minutes after birth. This is a crucial time for the birth parent and baby to share their first intimate moments together and <a href="https://www.figo.org/blog/golden-hour-breastfeeding-and-its-lifelong-benefits#:~:text=It%20is%20during%20this%20hour,to%20develop%20a%20strong%20bond" target="_blank" rel="noopener noreferrer" class="blog-link">initiating an emotional bond with significant health benefits</a>.`,
+        body: `The "golden hour" in neonatology is a term used to describe the first 60 minutes after birth. This is a crucial time for the birth parent and baby to share their first intimate moments together and initiating an emotional bond with significant health benefits.`,
       },
       {
-        body: `Within this first hour, the first breastfeeding usually occurs. Breastfeeding during the golden hour helps the baby stabilise its <a href="https://www.breastfeeding.asn.au/resources/skin-skin-contact" target="_blank" rel="noopener noreferrer" class="blog-link">heart rate, breathing, and blood sugar. Additionally, from the skin-to-skin, it regulates baby's autonomic nervous system – lowering stress hormones and keeps them warm</a>. As for the birthing parent, the skin-to-skin contact stimulates the release of oxytocin, aka the "love hormone". Oxytocin promotes uterine contractions which can help <a href="https://www.southshorehealth.org/wellness/blog/understanding-golden-hour-background-benefits#:~:text=The%20Golden%20Hour%20can%20have,supply%20and%20breastfeeding%20success%20rates" target="_blank" rel="noopener noreferrer" class="blog-link">reduce postpartum bleeding, support both breastmilk supply and breastfeeding success rates, and reduce risk of postpartum depression, anxiety, and mood disorders</a>. Overall, strengthening their physiological ties.`,
+        body: `Within this first hour, the first breastfeeding usually occurs. Breastfeeding during the golden hour helps the baby stabilise its heart rate, breathing, and blood sugar. Additionally, from the skin-to-skin, it regulates baby's autonomic nervous system – lowering stress hormones and keeps them warm. As for the birthing parent, the skin-to-skin contact stimulates the release of oxytocin, aka the "love hormone". Oxytocin promotes uterine contractions which can help reduce postpartum bleeding, support both breastmilk supply and breastfeeding success rates, and reduce risk of postpartum depression, anxiety, and mood disorders. Overall, strengthening their physiological ties.`,
       },
       {
         body: 'Skin-to-skin benefits are not exclusive to the Golden Hour or limited to the birth parent. Parents and partners can also engage in skin-to-skin contact beyond the first hour after birth. When they do, they experience increased bonding with their baby, along with positive benefits to their mental and emotional wellbeing.',
@@ -60,7 +58,6 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'colostrum',
     title: 'Colostrum: When should I express it?',
-    category: 'Education',
     date: 'Feb 2026',
     author: 'Sophie Akther',
     tag: 'Prenatal',
@@ -69,7 +66,7 @@ export const blogPosts: BlogPost[] = [
     summary: 'Colostrum — often called "liquid gold" — is your baby\'s first nutrition. Learn what antenatal expressing is, who it\'s recommended for, and how to get started.',
     sections: [
       {
-        body: `Colostrum is the first milk your breasts produce. Often called "liquid gold", it is thick, nutrient-dense, and rich in <a href="https://my.clevelandclinic.org/health/body/22434-colostrum" target="_blank" rel="noopener noreferrer" class="blog-link">antibodies, proteins, and growth factors that protect your baby from infection and support gut and immune development</a>.`,
+        body: `Colostrum is the first milk your breasts produce. Often called "liquid gold", it is thick, nutrient-dense, and rich in antibodies, proteins, and growth factors that protect your baby from infection and support gut and immune development.`,
       },
       {
         body: 'Your body begins producing colostrum during late pregnancy, and it continues in the first few days after birth before mature breast milk comes in.',
@@ -83,18 +80,18 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'When might it be recommended?',
-        body: `Your midwife and/or obstetrician might suggest <a href="https://www.breastfeeding.asn.au/resources/antenatal-expressing" target="_blank" rel="noopener noreferrer" class="blog-link">antenatal expressing</a> if:`,
+        body: `Your midwife and/or obstetrician might suggest antenatal expressing if:`,
         list: [
           `<strong>You have diabetes during pregnancy</strong> — babies can have low blood sugar after birth and the extra colostrum can help keep their blood sugar stable.`,
           'Your baby has a condition that might make feeding more difficult – this could include a tongue tie, cleft lip/palate, or certain heart or neurological conditions. If your baby is diagnosed with one of these conditions before birth, having colostrum on hand can be helpful.',
         ],
       },
       {
-        body: `The <a href="https://www.latrobe.edu.au/jlc/research/breastfeeding/dame/DAME-brochure-for-participants-Final.pdf" target="_blank" rel="noopener noreferrer" class="blog-link">large Australian DAME study found</a> that women with diabetes in otherwise low-risk pregnancy could safely express colostrum from 36 weeks, with no harm to their babies. Some babies were also less likely to require formula in the first 24 hours.`,
+        body: `The large <strong>Australian DAME study</strong> found that women with diabetes in otherwise low-risk pregnancy could safely express colostrum from 36 weeks, with no harm to their babies. Some babies were also less likely to require formula in the first 24 hours.`,
       },
       {
         heading: 'When should you avoid it?',
-        body: `Always speak to your midwife or doctor before starting antenatal expressing. Antenatal expressing <a href="https://www.pregnancybirthbaby.org.au/antenatal-expression-of-colostrum" target="_blank" rel="noopener noreferrer" class="blog-link">may not be recommended if</a> you:`,
+        body: `Always speak to your midwife or doctor before starting antenatal expressing. Antenatal expressing may not be recommended if you:`,
         list: [
           'Are at risk of premature labour',
           'Have placenta praevia',
@@ -103,7 +100,7 @@ export const blogPosts: BlogPost[] = [
         footnote: '*Nipple stimulation can release oxytocin, which may trigger uterine contractions – which is also why it is generally only recommended from 36 weeks onwards in low-risk pregnancies.',
       },
       {
-        heading: `Things to know before you start <a href="https://thewomens.r.worldssl.net/images/uploads/fact-sheets/Antenatal-expressing-expressing-breastmilk-during-pregnancy%C2%AD230503.pdf" target="_blank" rel="noopener noreferrer" class="blog-link text-base font-bodoni align-super text-xs">↗</a>`,
+        heading: `Things to know before you start`,
         ordered: true,
         list: [
           `Start <strong>no earlier than 36 weeks</strong>, unless advised otherwise.`,

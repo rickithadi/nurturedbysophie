@@ -39,5 +39,5 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 180px;
+  scroll-padding-top: 0;
 }
