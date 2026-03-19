@@ -1,4 +1,4 @@
-import { Leaf, Mail, Instagram } from 'lucide-react';
+import { Sprout, Mail, Instagram } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -6,8 +6,8 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto">
         {/* Main Contact Section */}
         <div className="text-center mb-8">
-          <div className="mb-12 flex justify-center text-forest">
-            <Leaf className="w-10 h-10 stroke-[1]" />
+          <div className=" flex justify-center text-forest">
+            <Sprout className="w-16 h-16 stroke-[1.5]" />
           </div>
 
           <h2 className="font-playfair text-forest text-4xl md:text-5xl tracking-tight mb-8">

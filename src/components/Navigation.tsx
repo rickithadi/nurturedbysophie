@@ -14,6 +14,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
         <Link
           to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex items-center hover:opacity-80 transition-opacity"
         >
           <img

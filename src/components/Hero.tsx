@@ -1,11 +1,11 @@
-import { Leaf } from 'lucide-react';
+import { Sprout } from 'lucide-react';
 
 const Hero = () => {
   return (
     <header className="h-screen overflow-hidden relative px-6 flex flex-col items-center justify-center text-center max-w-6xl mx-auto pt-20 md:pt-40 pb-8">
-      {/* Leaf Icon */}
-      <div className="mb-8 text-forest animate-fade-in">
-        <Leaf className="w-12 h-12 stroke-[1.5]" />
+      {/* Sprout Icon */}
+      <div className="mb-4 animate-fade-in text-forest">
+        <Sprout className="w-20 h-20 stroke-[1.5]" />
       </div>
 
       {/* Wordmark - Canva Style */}
