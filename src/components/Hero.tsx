@@ -3,10 +3,10 @@ import { Sprout } from 'lucide-react';
 const scrollToContact = () => {
   const element = document.getElementById('contact');
   if (!element) return;
-  const nav = document.querySelector('nav');
-  const navHeight = nav?.offsetHeight ?? 80;
+  const nav = document.querySelector('nav > div');
+  const navHeight = (nav as HTMLElement | null)?.offsetHeight ?? 80;
   window.scrollTo({
-    top: element.offsetTop - navHeight,
+    top: element.getBoundingClientRect().top + window.scrollY - navHeight,
     behavior: 'smooth',
   });
 };

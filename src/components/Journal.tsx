@@ -4,7 +4,7 @@ import { blogPosts } from '../data/blogPosts';
 
 const Journal = () => {
   return (
-    <section id="journal" className="h-screen flex flex-col justify-center px-6 bg-forest text-cream">
+    <section id="journal" className="min-h-screen py-16 md:py-24 px-6 bg-forest text-cream">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-8">
           <div>

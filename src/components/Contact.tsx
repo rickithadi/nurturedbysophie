@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
-    <footer id="contact" className="h-screen flex flex-col justify-center overflow-hidden px-6 border-t border-forest/10 bg-cream">
+    <footer id="contact" className="py-16 md:py-24 px-6 border-t border-forest/10 bg-cream">
       <div className="max-w-7xl mx-auto">
         {/* Main Contact Section */}
         <div className="text-center mb-8">

@@ -4,22 +4,23 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navRef = useRef<HTMLElement>(null);
+  const navBarRef = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (sectionId: string) => {
     setIsMobileMenuOpen(false);
     const element = document.getElementById(sectionId);
     if (!element) return;
-    const navHeight = navRef.current?.offsetHeight ?? 80;
+    const navHeight = navBarRef.current?.offsetHeight ?? 80;
+
     window.scrollTo({
-      top: element.offsetTop - navHeight,
+      top: element.getBoundingClientRect().top + window.scrollY - navHeight,
       behavior: 'smooth',
     });
   };
 
   return (
-    <nav ref={navRef} className="fixed w-full z-50 top-0 left-0 bg-cream/80 backdrop-blur-md border-b border-forest/10">
-      <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    <nav className="fixed w-full z-50 top-0 left-0 bg-cream/80 backdrop-blur-md border-b border-forest/10">
+      <div ref={navBarRef} className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
         <Link
           to="/"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

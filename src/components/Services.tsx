@@ -2,7 +2,7 @@ import { Baby, Activity, HeartHandshake, ArrowRight } from 'lucide-react';
 
 const Services = () => {
   return (
-    <section id="services" className="h-screen flex flex-col justify-center overflow-hidden px-6 bg-forest/5">
+    <section id="services" className="min-h-screen py-16 md:py-24 px-6 bg-forest/5">
       <div className="max-w-7xl mx-auto">
         {/* <div className="mb-6 md:mb-10"></div> */}
           <div>
