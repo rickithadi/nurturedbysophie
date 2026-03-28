@@ -1,8 +1,19 @@
 import { Sprout } from 'lucide-react';
 
+const scrollToContact = () => {
+  const element = document.getElementById('contact');
+  if (!element) return;
+  const nav = document.querySelector('nav');
+  const navHeight = nav?.offsetHeight ?? 80;
+  window.scrollTo({
+    top: element.offsetTop - navHeight,
+    behavior: 'smooth',
+  });
+};
+
 const Hero = () => {
   return (
-    <header className="h-screen overflow-hidden relative px-6 flex flex-col items-center justify-center text-center max-w-6xl mx-auto pt-20 md:pt-40 pb-8">
+    <header className="h-screen relative px-6 flex flex-col items-center justify-center text-center pt-20 md:pt-40 pb-8">
       {/* Sprout Icon */}
       <div className="mb-4 animate-fade-in text-forest">
         <Sprout className="w-20 h-20 stroke-[1.5]" />
@@ -19,12 +30,12 @@ const Hero = () => {
       </p>
 
       {/* CTA */}
-      <a
-        href="#contact"
+      <button
+        onClick={scrollToContact}
         className="px-8 py-4 rounded-full border border-forest text-forest text-lg font-bodoni hover:bg-forest hover:text-cream transition-all duration-300"
       >
         Get in touch
-      </a>
+      </button>
     </header>
   );
 };

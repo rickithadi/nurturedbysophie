@@ -1,8 +1,9 @@
 import { Sprout, Mail, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
-    <footer id="contact" className="h-screen flex flex-col justify-center overflow-hidden px-6 border-t border-forest/10 bg-cream pt-20 md:pt-40">
+    <footer id="contact" className="h-screen flex flex-col justify-center overflow-hidden px-6 border-t border-forest/10 bg-cream">
       <div className="max-w-7xl mx-auto">
         {/* Main Contact Section */}
         <div className="text-center mb-8">
@@ -56,12 +57,12 @@ const Contact = () => {
               Resources
             </h3>
             <div className="flex flex-col gap-2">
-              <a href="#" className="text-sage hover:text-forest transition-colors">
+              <Link to="/privacy" className="text-sage hover:text-forest transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-sage hover:text-forest transition-colors">
-                Accessibility Statement
-              </a>
+              </Link>
+              <Link to="/code-of-conduct" className="text-sage hover:text-forest transition-colors">
+                Code of Conduct
+              </Link>
             </div>
           </div>
         </div>
@@ -79,7 +80,7 @@ const Contact = () => {
         {/* Copyright */}
         <div className="pt-8 border-t border-forest/10 text-center">
           <p className="text-sm font-bodoni text-sage/60">
-            © 2024 NurturedbySophie. All rights reserved.
+            ©2026 NurturedbySophie. All rights reserved.
           </p>
         </div>
       </div>

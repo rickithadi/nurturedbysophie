@@ -1,16 +1,24 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+  const scrollToSection = (sectionId: string) => {
+    setIsMobileMenuOpen(false);
+    const element = document.getElementById(sectionId);
+    if (!element) return;
+    const navHeight = navRef.current?.offsetHeight ?? 80;
+    window.scrollTo({
+      top: element.offsetTop - navHeight,
+      behavior: 'smooth',
+    });
   };
 
   return (
-    <nav className="fixed w-full z-50 top-0 left-0 bg-cream/80 backdrop-blur-md border-b border-forest/10">
+    <nav ref={navRef} className="fixed w-full z-50 top-0 left-0 bg-cream/80 backdrop-blur-md border-b border-forest/10">
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
         <Link
           to="/"
@@ -25,36 +33,36 @@ const Navigation = () => {
         </Link>
 
         <div className="hidden md:flex space-x-8 items-center">
-          <a
-            href="#services"
+          <button
+            onClick={() => scrollToSection('services')}
             className="text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
           >
             Services
-          </a>
-          <a
-            href="#about"
+          </button>
+          <button
+            onClick={() => scrollToSection('about')}
             className="text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
           >
             Philosophy
-          </a>
-          <a
-            href="#journal"
+          </button>
+          <button
+            onClick={() => scrollToSection('journal')}
             className="text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
           >
             Blogs
-          </a>
-          <a
-            href="#contact"
+          </button>
+          <button
+            onClick={() => scrollToSection('contact')}
             className="px-5 py-2.5 rounded-full border border-forest text-forest text-sm font-bodoni hover:bg-forest hover:text-cream transition-all duration-300"
           >
             Get in touch
-          </a>
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-forest"
-          onClick={toggleMobileMenu}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle mobile menu"
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -65,34 +73,30 @@ const Navigation = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-cream border-b border-forest/10">
           <div className="px-6 py-4 space-y-4">
-            <a
-              href="#services"
-              className="block text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
+            <button
+              onClick={() => scrollToSection('services')}
+              className="block w-full text-left text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
             >
               Services
-            </a>
-            <a
-              href="#about"
-              className="block text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
+            </button>
+            <button
+              onClick={() => scrollToSection('about')}
+              className="block w-full text-left text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
             >
               Philosophy
-            </a>
-            <a
-              href="#journal"
-              className="block text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
+            </button>
+            <button
+              onClick={() => scrollToSection('journal')}
+              className="block w-full text-left text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
             >
               Blogs
-            </a>
-            <a
-              href="#contact"
-              className="block px-5 py-2.5 rounded-full border border-forest text-forest text-sm font-bodoni hover:bg-forest hover:text-cream transition-all duration-300 text-center"
-              onClick={() => setIsMobileMenuOpen(false)}
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="block w-full px-5 py-2.5 rounded-full border border-forest text-forest text-sm font-bodoni hover:bg-forest hover:text-cream transition-all duration-300 text-center"
             >
               Get in touch
-            </a>
+            </button>
           </div>
         </div>
       )}

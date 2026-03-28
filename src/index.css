@@ -39,5 +39,11 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 0;
+  scroll-padding-top: 80px; /* mobile nav height */
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 152px; /* desktop nav height */
+  }
 }

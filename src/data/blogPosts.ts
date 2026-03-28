@@ -36,19 +36,19 @@ export const blogPosts: BlogPost[] = [
         body: 'The minutes and hours directly after a baby is born can be quite overwhelming. Everything seems to happen quickly: health checks, measurements, weigh-ins, and examinations.',
       },
       {
-        body: `These things can often occur during an intense mixture of emotions by the parents, and thus, this period can often feel exceptionally rushed. Hence, the Golden Hour changes that. This concept has been adopted from adult trauma where the initial first hour of trauma management is considered as the golden hour.`,
+        body: `These things can often occur during an intense mixture of emotions by the parents, and thus, this period can often feel exceptionally rushed. Hence, the Golden Hour changes that. This concept has been adopted from adult trauma where the initial first hour of trauma management is considered as the Golden Hour.`,
       },
       {
-        body: `The "golden hour" in neonatology is a term used to describe the first 60 minutes after birth. This is a crucial time for the birth parent and baby to share their first intimate moments together and initiating an emotional bond with significant health benefits.`,
+        body: `The "Golden Hour" in neonatology is a term used to describe the first 60 minutes after birth. This is a crucial time for the birth parent and baby to share their first intimate moments together and initiating an emotional bond with significant health benefits.`,
       },
       {
-        body: `Within this first hour, the first breastfeeding usually occurs. Breastfeeding during the golden hour helps the baby stabilise its heart rate, breathing, and blood sugar. Additionally, from the skin-to-skin, it regulates baby's autonomic nervous system – lowering stress hormones and keeps them warm. As for the birthing parent, the skin-to-skin contact stimulates the release of oxytocin, aka the "love hormone". Oxytocin promotes uterine contractions which can help reduce postpartum bleeding, support both breastmilk supply and breastfeeding success rates, and reduce risk of postpartum depression, anxiety, and mood disorders. Overall, strengthening their physiological ties.`,
+        body: `Within this first hour, the first breastfeeding usually occurs. Breastfeeding during the Golden Hour helps the baby stabilise its heart rate, breathing, and blood sugar. Additionally, from the skin-to-skin, it regulates baby's autonomic nervous system – lowering stress hormones and keeps them warm. As for the birthing parent, the skin-to-skin contact stimulates the release of oxytocin, aka the "love hormone". Oxytocin promotes uterine contractions which can help reduce postpartum bleeding, support both breastmilk supply and breastfeeding success rates, and reduce risk of postpartum depression, anxiety, and mood disorders. Overall, strengthening their physiological ties.`,
       },
       {
-        body: 'Skin-to-skin benefits are not exclusive to the Golden Hour or limited to the birth parent. Parents and partners can also engage in skin-to-skin contact beyond the first hour after birth. When they do, they experience increased bonding with their baby, along with positive benefits to their mental and emotional wellbeing.',
+        body: 'Skin-to-skin benefits are <strong>not exclusive to the Golden Hour</strong> or limited to the birth parent. Parents and partners can also engage in skin-to-skin contact beyond the first hour after birth. When they do, they experience increased bonding with their baby, along with positive benefits to their mental and emotional wellbeing.',
       },
       {
-        body: `The Golden Hour is a <strong>golden standard</strong> here in Australia and is aimed to be implemented and inclusive of all births. Therefore, even after a caesarean section, as long as both birthing parent and newborn are medically stable – the golden hour with skin to skin occurs. The only time the Golden Hour may not and cannot be experienced would be due to medical reasons.`,
+        body: `The Golden Hour is a <strong>golden standard</strong> here in Australia and is aimed to be implemented and inclusive of all births. Therefore, even after a caesarean section, as long as both birthing parent and newborn are medically stable – the Golden Hour with skin to skin occurs. The only time the Golden Hour may not and cannot be experienced would be due to medical reasons.`,
       },
       {
         body: 'The Golden Hour is more than just a beautiful moment – it is a physiologically powerful transition for both parents and baby. Through skin-to-skin contact, hormonal regulation, and early breastfeeding, this first hour supports stability, bonding, and long-term health outcomes. When protected, the Golden Hour becomes not just a practise, but a foundation for lifelong connection and wellbeing for all involved.',
