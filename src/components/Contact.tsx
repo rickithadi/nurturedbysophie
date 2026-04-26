@@ -1,9 +1,10 @@
-import { Sprout, Mail, Instagram } from 'lucide-react';
+import { Instagram, Mail, Sprout } from 'lucide-react';
+
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
-    <footer id="contact" className="py-16 md:py-24 px-6 border-t border-forest/10 bg-cream">
+    <footer id="contact" className="py-16 md:py-20 px-6 border-t border-forest/10 bg-cream">
       <div className="max-w-7xl mx-auto">
         {/* Main Contact Section */}
         <div className="text-center mb-8 md:mb-12">

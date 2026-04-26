@@ -58,7 +58,7 @@ const About = () => {
         </div>
 
         {/* Celebrating Motherhood Section */}
-        <div id="celebrating-motherhood" className="mt-24 md:mt-32 text-center max-w-4xl mx-auto">
+        <div id="celebrating-motherhood" className="min-h-[80vh] flex flex-col justify-start pt-16 md:pt-24 -mb-16 md:-mb-20 text-center max-w-4xl mx-auto">
           <h2 className="font-playfair text-forest text-4xl md:text-5xl tracking-tight font-medium mb-12">
             Celebrating Motherhood
           </h2>
