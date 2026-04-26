@@ -3,7 +3,7 @@ const About = () => {
     <section id="about" className="pt-20 md:pt-40 pb-24 px-6 bg-cream">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-16 md:mb-24">
+        <div className="mb-8 md:mb-12">
           <span className="font-bodoni text-forest uppercase tracking-widest text-sm mb-4 block">
            Philosophy
           </span>
@@ -64,16 +64,16 @@ const About = () => {
           </h2>
           <div className="space-y-6 text-lg font-light leading-relaxed text-sage">
             <p>
-              Sophie is a student Midwife at ACU, graduating in 2027. She is deeply committed to women-centred care and aims to one day be a private midwife, advocating for physiological births, specifically specialising in home births.
+              Sophie is a student midwife at ACU, graduating in 2027. She is deeply committed to woman-centred care and aspires to become a private midwife, advocating for physiological birth and specialising in home birth.
             </p>
             <p>
-              Currently, Sophie can offer her services as a student and be a supportive presence alongside your pregnancy journey, providing continuity of care. The benefits of this experience are that she will be committed and be a part of every step of your pregnancy journey, learning from each other.
+              Currently, Sophie offers her support as a student midwife, providing a consistent and reassuring presence throughout your pregnancy journey. This continuity of care allows her to be involved every step of the way, creating a space where you can learn, grow, and feel supported together.
             </p>
             <p>
-              Sophie is also currently training in Reformer Pilates as of 2026, in hopes to specialise in pre- and postnatal Reformer Pilates. This endeavour is fuelled by the desire to expand her knowledge and expertise when it comes to supporting pregnant women, which reflects her holistic approach within her services.
+              Alongside her midwifery studies, Sophie is training in Reformer Pilates, with plans to specialise in pre- and postnatal Pilates, as well as Hypnobirthing Supportive Care by 2026. These pursuits reflect her commitment to expanding her knowledge and providing holistic, women-centred care during pregnancy and beyond.
             </p>
             <p>
-              If you're interested in Sophie's services, please don't hesitate to reach out!
+              If you feel aligned with Sophie's approach and would like her support throughout your journey, please don't hesitate to reach out!
             </p>
           </div>
         </div>

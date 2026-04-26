@@ -1,11 +1,10 @@
-import { Baby, Activity, HeartHandshake, ArrowRight } from 'lucide-react';
+import { Baby, Activity, HeartHandshake, ArrowRight, Wind } from 'lucide-react';
 
 const Services = () => {
   return (
     <section id="services" className="min-h-screen py-16 md:py-24 px-6 bg-forest/5">
       <div className="max-w-7xl mx-auto">
-        {/* <div className="mb-6 md:mb-10"></div> */}
-          <div>
+        <div className="mb-8 md:mb-12">
           <span className="font-bodoni text-forest uppercase tracking-widest text-sm mb-4 block">
             Offerings
           </span>
@@ -14,7 +13,7 @@ const Services = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Service 1: Midwifery Care */}
           <div className="group p-8 md:p-10 rounded-2xl bg-cream border border-forest/10 hover:border-forest/40 transition-all duration-300 hover:shadow-xl hover:shadow-forest/5">
             <div className="w-12 h-12 bg-forest/10 rounded-full flex items-center justify-center mb-8 text-forest">
@@ -34,7 +33,26 @@ const Services = () => {
             </a>
           </div>
 
-          {/* Service 2: Reformer Pilates */}
+          {/* Service 2: Hypnobirthing */}
+          <div className="group p-8 md:p-10 rounded-2xl bg-cream border border-forest/10 hover:border-forest/40 transition-all duration-300 hover:shadow-xl hover:shadow-forest/5">
+            <div className="w-12 h-12 bg-forest/10 rounded-full flex items-center justify-center mb-8 text-forest">
+              <Wind className="w-6 h-6 stroke-[1.5]" />
+            </div>
+            <h3 className="font-playfair text-forest text-2xl md:text-3xl tracking-tight mb-4">
+              Hypnobirthing-Informed Birth Support
+            </h3>
+            <p className="text-lg leading-relaxed mb-8 font-light text-sage">
+              Grounded in the philosophy of hypnobirthing, which incorporates breathwork, pelvic awareness, optimal body positioning, and mindset techniques in support of creating a calm and positive birth experience. Gentle touch, movement, grounding practices, and supportive communication further encourage informed and confident decision-making.
+            </p>
+            <a
+              href="#celebrating-motherhood"
+              className="inline-flex items-center text-forest font-bodoni border-b border-forest/30 pb-1 hover:border-forest transition-colors"
+            >
+              Learn more <ArrowRight className="w-4 h-4 ml-2" />
+            </a>
+          </div>
+
+          {/* Service 3: Reformer Pilates */}
           <div className="group p-8 md:p-10 rounded-2xl bg-cream border border-forest/10 transition-all duration-300 relative opacity-60 cursor-not-allowed">
             {/* Coming Soon Badge */}
             <div className="absolute top-4 right-4 bg-sage/10 px-3 py-1 rounded-full">

@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { getBlogPost } from '../data/blogPosts';
@@ -6,9 +5,6 @@ import { getBlogPost } from '../data/blogPosts';
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [slug]);
   const post = slug ? getBlogPost(slug) : undefined;
 
   if (!post) {
