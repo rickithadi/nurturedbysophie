@@ -1,14 +1,14 @@
 const About = () => {
   return (
-    <section id="about" className="pt-20 md:pt-40 pb-24 px-6 bg-cream">
+    <section id="about" className="py-16 md:py-24 px-6 bg-cream">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8 md:mb-12">
           <span className="font-bodoni text-forest uppercase tracking-widest text-sm mb-4 block">
-           Philosophy
+            Philosophy
           </span>
           <h2 className="font-playfair text-forest text-4xl md:text-5xl tracking-tight font-medium">
-            About 
+            About
           </h2>
         </div>
 
@@ -31,7 +31,7 @@ const About = () => {
               Sophie Jasmine Akther
             </h3>
             <p className="font-bodoni text-forest text-base md:text-lg tracking-wide mb-8">
-              Continuity of Care – Pre-postnatal Reformer Pilates Instructor – Breastfeeding Education – Holistic Midwife
+              Continuity of Care – Hypnobirthing Support - Pre-Postnatal Reformer Pilates Instructor – Breastfeeding Education – Holistic Midwife
             </p>
 
             <div className="space-y-6 text-lg font-light leading-relaxed text-sage">

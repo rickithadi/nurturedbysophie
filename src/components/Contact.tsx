@@ -6,7 +6,7 @@ const Contact = () => {
     <footer id="contact" className="py-16 md:py-24 px-6 border-t border-forest/10 bg-cream">
       <div className="max-w-7xl mx-auto">
         {/* Main Contact Section */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 md:mb-12">
           <div className=" flex justify-center text-forest">
             <Sprout className="w-16 h-16 stroke-[1.5]" />
           </div>
@@ -20,11 +20,11 @@ const Contact = () => {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
             <a
-              href="mailto:hello@nurturedbysophie.com"
+              href="mailto:nurturedbysophie@yahoo.com"
               className="flex items-center gap-3 px-8 py-4 bg-forest text-cream rounded-full text-lg hover:bg-sage transition-colors"
             >
               <Mail className="w-5 h-5" />
-              hello@nurturedbysophie.com
+              nurturedbysophie@yahoo.com
             </a>
             <a
               href="https://instagram.com/nurturedbysophie"

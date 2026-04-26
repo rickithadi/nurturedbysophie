@@ -106,10 +106,10 @@ const PrivacyPolicy = () => {
             If you have any questions or concerns about this Privacy Policy, please contact:
           </p>
           <a
-            href="mailto:hello@nurturedbysophie.com"
+            href="mailto:nurturedbysophie@yahoo.com"
             className="inline-block font-helvetica text-forest text-lg underline underline-offset-2 decoration-forest/40 hover:decoration-forest transition-colors"
           >
-            hello@nurturedbysophie.com
+            nurturedbysophie@yahoo.com
           </a>
         </section>
 
