@@ -70,7 +70,7 @@ const About = () => {
               Currently, Sophie offers her support as a student midwife, providing a consistent and reassuring presence throughout your pregnancy journey. This continuity of care allows her to be involved every step of the way, creating a space where you can learn, grow, and feel supported together.
             </p>
             <p>
-              Alongside her midwifery studies, Sophie is training in Reformer Pilates, with plans to specialise in pre- and postnatal Pilates, as well as Hypnobirthing Supportive Care by 2026. These pursuits reflect her commitment to expanding her knowledge and providing holistic, women-centred care during pregnancy and beyond.
+              Alongside her midwifery studies, Sophie is training in Reformer Pilates, with plans to specialise in pre- and postnatal, as well as Hypnobirthing Supportive Care through Hypnobirthing Australia by 2026. These pursuits reflect her commitment to expanding her knowledge and providing holistic, women-centred care during pregnancy and beyond.
             </p>
             <p>
               If you feel aligned with Sophie's approach and would like her support throughout your journey, please don't hesitate to reach out!

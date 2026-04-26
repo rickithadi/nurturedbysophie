@@ -1,4 +1,4 @@
-import { Baby, Activity, HeartHandshake, ArrowRight, Wind } from 'lucide-react';
+import { Activity, ArrowRight, Baby, HeartHandshake, Wind } from 'lucide-react';
 
 const Services = () => {
   return (
@@ -39,7 +39,7 @@ const Services = () => {
               <Wind className="w-6 h-6 stroke-[1.5]" />
             </div>
             <h3 className="font-playfair text-forest text-2xl md:text-3xl tracking-tight mb-4">
-              Hypnobirthing-Informed Birth Support
+              Hypnobirthing Supportive Caregiver
             </h3>
             <p className="text-lg leading-relaxed mb-8 font-light text-sage">
               Grounded in the philosophy of hypnobirthing, which incorporates breathwork, pelvic awareness, optimal body positioning, and mindset techniques in support of creating a calm and positive birth experience. Gentle touch, movement, grounding practices, and supportive communication further encourage informed and confident decision-making.
