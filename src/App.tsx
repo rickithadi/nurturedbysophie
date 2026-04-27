@@ -22,8 +22,8 @@ const MainSite = () => (
   <div className="bg-cream text-sage antialiased selection:bg-forest selection:text-cream">
     <Navigation />
     <Hero />
-    <Services />
     <About />
+    <Services />
     <Journal />
     <Contact />
   </div>
