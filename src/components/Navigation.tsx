@@ -35,16 +35,16 @@ const Navigation = () => {
 
         <div className="hidden md:flex space-x-8 items-center">
           <button
-            onClick={() => scrollToSection('services')}
-            className="text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
-          >
-            Services
-          </button>
-          <button
             onClick={() => scrollToSection('about')}
             className="text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
           >
             Philosophy
+          </button>
+          <button
+            onClick={() => scrollToSection('services')}
+            className="text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
+          >
+            Services
           </button>
           <button
             onClick={() => scrollToSection('journal')}
@@ -75,16 +75,16 @@ const Navigation = () => {
         <div className="md:hidden bg-cream border-b border-forest/10">
           <div className="px-6 py-4 space-y-4">
             <button
-              onClick={() => scrollToSection('services')}
-              className="block w-full text-left text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
-            >
-              Services
-            </button>
-            <button
               onClick={() => scrollToSection('about')}
               className="block w-full text-left text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
             >
               Philosophy
+            </button>
+            <button
+              onClick={() => scrollToSection('services')}
+              className="block w-full text-left text-sm font-bodoni uppercase tracking-widest text-forest hover:text-sage transition-colors"
+            >
+              Services
             </button>
             <button
               onClick={() => scrollToSection('journal')}
