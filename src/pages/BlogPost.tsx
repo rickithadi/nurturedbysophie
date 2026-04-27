@@ -1,9 +1,10 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { getBlogPost } from '../data/blogPosts';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
+  const navigate = useNavigate();
 
   const post = slug ? getBlogPost(slug) : undefined;
 
@@ -13,7 +14,7 @@ const BlogPost = () => {
         <div className="text-center">
           <p className="font-bodoni text-forest/60 text-lg mb-4">Post not found.</p>
           <button
-            onClick={() => { window.location.href = '/#journal'; }}
+            onClick={() => { navigate('/#journal'); }}
             className="font-bodoni text-sm uppercase tracking-widest text-forest hover:text-sage transition-colors"
           >
             ← Back to Blog
@@ -28,7 +29,7 @@ const BlogPost = () => {
       {/* Back nav */}
       <div className="max-w-3xl mx-auto px-6 pt-8 pb-4">
         <button
-          onClick={() => { window.location.href = '/#journal'; }}
+          onClick={() => { navigate('/#journal'); }}
           className="group inline-flex items-center gap-2 font-bodoni text-sm uppercase tracking-widest text-forest/60 hover:text-forest transition-colors"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />

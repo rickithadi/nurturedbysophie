@@ -13,7 +13,12 @@ import CodeOfConduct from './pages/CodeOfConduct';
 const ScrollToTop = () => {
   const location = useLocation();
   useLayoutEffect(() => {
-    if (!location.hash) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    if (location.hash) {
+      const el = document.getElementById(location.hash.slice(1));
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
   }, [location.key]);
   return null;
 };
