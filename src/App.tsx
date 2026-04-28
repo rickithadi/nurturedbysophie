@@ -1,5 +1,6 @@
 import { useLayoutEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -37,6 +38,7 @@ const MainSite = () => (
 function App() {
   return (
     <BrowserRouter>
+      <Analytics />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainSite />} />
