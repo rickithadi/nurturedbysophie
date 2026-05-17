@@ -76,6 +76,13 @@ const About = () => {
               If you feel aligned with Sophie's approach and would like her support throughout your journey, please don't hesitate to reach out!
             </p>
           </div>
+          <div className="flex justify-center mt-10">
+            <img
+              src="/hypnobirthing-badge.png"
+              alt="Hypnobirthing Australia Supportive Caregiver"
+              className="w-24 h-24 md:w-28 md:h-28 object-contain opacity-90"
+            />
+          </div>
         </div>
       </div>
     </section>
