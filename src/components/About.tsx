@@ -31,7 +31,7 @@ const About = () => {
               Sophie Jasmine Akther
             </h3>
             <p className="font-bodoni text-forest text-base md:text-lg tracking-wide mb-8">
-              Continuity of Care – Hypnobirthing Support - Pre-Postnatal Reformer Pilates Instructor – Breastfeeding Education – Holistic Midwife
+              Continuity of Care – Spinning Babies Birth Prep – Hypnobirthing Support - Pre-Postnatal Reformer Pilates Instructor – Holistic Midwife
             </p>
 
             <div className="space-y-6 text-lg font-light leading-relaxed text-sage">
@@ -50,7 +50,7 @@ const About = () => {
               <div>
                 <p className="font-medium text-forest mb-2">Meet Sophie</p>
                 <p>
-                  Sophie brings a diverse background and a deep commitment to overall well-being (inc. mental, physiological, social, and financial) to her midwifery practice. She has a particular passion to advocate for natural and physiological pregnancy journeys, and is dedicated to providing compassionate and inclusive care to all expecting mothers.
+                  Sophie brings a diverse background and a deep commitment to holistic well-being to her midwifery practice. She believes in the strength and wisdom of the body, and in building trust between women, their bodies, and their babies. Above all, Sophie is dedicated to providing compassionate and inclusive care to all expecting mothers.
                 </p>
               </div>
             </div>
@@ -64,22 +64,27 @@ const About = () => {
           </h2>
           <div className="space-y-6 text-lg font-light leading-relaxed text-sage">
             <p>
-              Sophie is a student midwife at ACU, graduating in 2027. She is deeply committed to woman-centred care and aspires to become a private midwife, advocating for physiological birth and specialising in home birth.
+              Sophie is a student midwife at ACU, graduating at the end of 2027. She is deeply committed to woman-centred care and aspires to become a private midwife, advocating for physiological birth and specialising in home birth.
             </p>
             <p>
               Currently, Sophie offers her support as a student midwife, providing a consistent and reassuring presence throughout your pregnancy journey. This continuity of care allows her to be involved every step of the way, creating a space where you can learn, grow, and feel supported together.
             </p>
             <p>
-              Alongside her midwifery studies, Sophie is training in Reformer Pilates, with plans to specialise in pre- and postnatal, as well as Hypnobirthing Supportive Care through Hypnobirthing Australia by 2026. These pursuits reflect her commitment to expanding her knowledge and providing holistic, women-centred care during pregnancy and beyond.
+              Alongside her midwifery studies, Sophie has completed her Reformer Pilates Instructor training at Barre Body, with plans to specialise in pre-and postnatal, as well as Hypnobirthing Supportive Care and Spinning Babies workshops. These pursuits reflect her commitment to expanding her knowledge and providing holistic, women-centred care during pregnancy and beyond.
             </p>
             <p>
               If you feel aligned with Sophie's approach and would like her support throughout your journey, please don't hesitate to reach out!
             </p>
           </div>
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center items-center gap-6 mt-10">
             <img
               src="/hypnobirthing-badge.png"
               alt="Hypnobirthing Australia Supportive Caregiver"
+              className="w-24 h-24 md:w-28 md:h-28 object-contain opacity-90"
+            />
+            <img
+              src="/spinning-babies-badge.png"
+              alt="Spinning Babies 1 Day Workshop"
               className="w-24 h-24 md:w-28 md:h-28 object-contain opacity-90"
             />
           </div>

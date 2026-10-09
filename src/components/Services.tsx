@@ -1,4 +1,4 @@
-import { Activity, ArrowRight, Baby, HeartHandshake, Wind } from 'lucide-react';
+import { Activity, ArrowRight, Baby, Move, Wind } from 'lucide-react';
 
 const Services = () => {
   return (
@@ -75,27 +75,23 @@ const Services = () => {
             </span>
           </div>
 
-          {/* Service 3: Breastfeeding */}
-          <div className="group p-8 md:p-10 rounded-2xl bg-cream border border-forest/10 transition-all duration-300 relative opacity-60 cursor-not-allowed">
-            {/* Coming Soon Badge */}
-            <div className="absolute top-4 right-4 bg-sage/10 px-3 py-1 rounded-full">
-              <span className="text-xs uppercase font-bodoni tracking-widest text-forest">
-                Coming Soon
-              </span>
-            </div>
-
+          {/* Service 4: Spinning Babies */}
+          <div className="group p-8 md:p-10 rounded-2xl bg-cream border border-forest/10 hover:border-forest/40 transition-all duration-300 hover:shadow-xl hover:shadow-forest/5">
             <div className="w-12 h-12 bg-forest/10 rounded-full flex items-center justify-center mb-8 text-forest">
-              <HeartHandshake className="w-6 h-6 stroke-[1.5]" />
+              <Move className="w-6 h-6 stroke-[1.5]" />
             </div>
             <h3 className="font-playfair text-forest text-2xl md:text-3xl tracking-tight mb-4">
-              Lactation Consultant
+              Spinning Babies Birth Preparation
             </h3>
             <p className="text-lg leading-relaxed mb-8 font-light text-sage">
-              Breastfeeding education and support to help establish and maintain a successful relationship and routine between your body and your baby. This will be personalised guidance as it is a unique journey.
+              Spinning Babies has been shown to reduce caesarean sections by up to 48%! This practice promotes physiological movement, maternal positioning, and techniques that support balance, preparing for and caring for birth. Feel connected and confident with movement that increases comfort and ease at your birth.
             </p>
-            <span className="inline-flex items-center text-forest font-bodoni border-b border-forest/30 pb-1">
-              Learn More! <ArrowRight className="w-4 h-4 ml-2" />
-            </span>
+            <a
+              href="#celebrating-motherhood"
+              className="inline-flex items-center text-forest font-bodoni border-b border-forest/30 pb-1 hover:border-forest transition-colors"
+            >
+              Learn more <ArrowRight className="w-4 h-4 ml-2" />
+            </a>
           </div>
         </div>
       </div>
