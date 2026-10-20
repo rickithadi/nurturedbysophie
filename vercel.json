@@ -4,6 +4,11 @@
       "source": "/safer-communities/protecting-children-and-families/family-violence",
       "destination": "https://www.justice.vic.gov.au/safer-communities/protecting-children-and-families/family-violence",
       "permanent": true
+    },
+    {
+      "source": "/safer-communities/protecting-children-and-families/family-violence/:rest*",
+      "destination": "https://www.justice.vic.gov.au/safer-communities/protecting-children-and-families/family-violence",
+      "permanent": true
     }
   ]
 }
