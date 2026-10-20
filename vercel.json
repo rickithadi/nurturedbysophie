@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/safer-communities/protecting-children-and-families/family-violence",
+      "destination": "https://www.justice.vic.gov.au/safer-communities/protecting-children-and-families/family-violence",
+      "permanent": true
+    }
+  ]
+}
